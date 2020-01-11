@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class RandomTextMessageService implements MessageService {
 
-    List<String> lis1 = Arrays.asList( "Alex", "Brian", "Charles", "Jacob", "Suzie", "Melisa", "Matthew", "Michael", "Malyna", "Marisa ");
+    List<String> lis1 = new ArrayList<>(Arrays.asList( "Alex", "Brian", "Charles", "Jacob", "Suzie", "Melisa", "Matthew", "Michael", "Malyna", "Marisa "));
     Random rand = new Random();
 
 

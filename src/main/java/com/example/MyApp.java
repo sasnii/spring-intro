@@ -8,9 +8,10 @@ public class MyApp {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         MessageService messageService = applicationContext.getBean("messageService", MessageService.class);
-        MessageService messageService2 = applicationContext.getBean("messageService", MessageService.class);
+        MessageService messageService2 = applicationContext.getBean("randomMessageService", MessageService.class);
 
         System.out.println(messageService.getMessage());
+        System.out.println(messageService2.getMessage());
         System.out.println("Hash messageService : " + messageService.hashCode());
         System.out.println("Hash messageService2 : " + messageService2.hashCode());
 
